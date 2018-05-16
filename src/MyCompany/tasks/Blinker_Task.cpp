@@ -1,4 +1,6 @@
 
+#include <MyCompany/Global_Hardware.h>
+
 #include "Blinker_Task.h"
 
 using namespace MyCompany;
@@ -9,12 +11,11 @@ Blinker_Task::Blinker_Task()
     m_toggle_timer_in_ms( DEFAULT_TOGGLE_TIME_IN_MS ),
     Task( "Blinker_Task" )
 {
-    m_led = new Digital_Output( 1, "LED" );
+    m_led = static_cast< Digital_Output* >( IO::Get( IO_LED ) );
 }
 
 Blinker_Task::~Blinker_Task()
 {
-    delete m_led;
 }
 
 void Blinker_Task::Set_Toggle_Time( int ms )
