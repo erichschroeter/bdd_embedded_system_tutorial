@@ -23,6 +23,7 @@ target_include_directories(mycompany
 
 add_executable(unit_tests
     test/Hardware_Tests.cpp
+    test/Blinker_Tests.cpp
     test/main.cpp
     )
 target_link_libraries(unit_tests mycompany)
