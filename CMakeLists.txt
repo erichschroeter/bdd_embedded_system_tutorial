@@ -21,6 +21,11 @@ target_include_directories(mycompany
         ${CMAKE_SOURCE_DIR}/src
     )
 
+add_executable(unit_tests
+    test/main.cpp
+    )
+target_link_libraries(unit_tests mycompany)
+
 add_executable(LED_Blinker src/main.cpp)
 target_link_libraries(LED_Blinker mycompany)
 
