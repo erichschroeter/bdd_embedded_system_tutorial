@@ -13,6 +13,8 @@ add_library(mycompany
     src/MyCompany/hardware/Digital_Output.cpp
     src/MyCompany/hardware/Hardware.h
     src/MyCompany/hardware/Hardware.cpp
+    src/MyCompany/Global_Hardware.h
+    src/MyCompany/Global_Hardware.cpp
     )
 target_include_directories(mycompany
     PUBLIC
