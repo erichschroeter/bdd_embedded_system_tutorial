@@ -7,6 +7,8 @@ enable_testing()
 add_library(mycompany
     src/MyCompany/tasks/Task.h
     src/MyCompany/tasks/Task.cpp
+    src/MyCompany/hardware/Digital_Output.h
+    src/MyCompany/hardware/Digital_Output.cpp
     src/MyCompany/hardware/Hardware.h
     src/MyCompany/hardware/Hardware.cpp
     )
